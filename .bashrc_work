@@ -67,10 +67,12 @@ alias bo='/apollo/env/OctaneBrazilTools/bin/brazil-octane'
 # shh aliases
 alias dev='ssh dev-dsk-indona-2b-02aa373e.us-west-2.amazon.com'
 
-# Setting PATH for Python 3.5
+# Setting up initial PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${PATH}
+
+# Setting PATH for Python 3.7
 # The orginal version is saved in .bash_profile.pysave
-PATH="/usr/local/bin/python3.7:${PATH}"
-export PATH
+export PATH="/usr/local/bin/python3.7:${PATH}"
 
 # setting path with brazil paths
 export PATH=$BRAZIL_CLI_BIN:$PATH
